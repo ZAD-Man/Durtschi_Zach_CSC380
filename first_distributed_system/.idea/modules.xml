@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/first_distributed_system.iml" filepath="$PROJECT_DIR$/first_distributed_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first_distributed_system_Client/first_distributed_system_Client.iml" filepath="$PROJECT_DIR$/first_distributed_system_Client/first_distributed_system_Client.iml" />
     </modules>
   </component>
 </project>
