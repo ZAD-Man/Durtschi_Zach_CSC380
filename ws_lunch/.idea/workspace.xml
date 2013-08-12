@@ -35,6 +35,7 @@
     <file path="/LunchClient.java" changelist="5e8b19fe-077f-4190-84da-e82b5f9b3057" time="1376268159512" ignored="false" />
     <file path="/index.jsp" changelist="5e8b19fe-077f-4190-84da-e82b5f9b3057" time="1376172418927" ignored="false" />
     <file path="/OrderServlet.java" changelist="5e8b19fe-077f-4190-84da-e82b5f9b3057" time="1376267619338" ignored="false" />
+    <file path="$PROJECT_DIR$/SOAPForLunch/web/WEB-INF/web.xml" changelist="5e8b19fe-077f-4190-84da-e82b5f9b3057" time="1376269321822" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,7 @@
       <file leaf-file-name="LunchServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zad/lunch/servlet/LunchServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
+            <state line="18" column="13" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +108,7 @@
       <file leaf-file-name="OrderServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zad/lunch/servlet/OrderServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="61" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.0">
+            <state line="24" column="33" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,7 +117,7 @@
       <file leaf-file-name="LunchClient.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zad/lunch/client/LunchClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="50" selection-start="937" selection-end="937" vertical-scroll-proportion="0.70598006">
+            <state line="25" column="50" selection-start="937" selection-end="937" vertical-scroll-proportion="-0.7354556">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,9 +148,9 @@
         <option value="$PROJECT_DIR$/src/zad/lunch/LunchServiceHolder.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/zad/lunch/jaxb/LunchService.java" />
+        <option value="$PROJECT_DIR$/src/zad/lunch/client/LunchClient.java" />
         <option value="$PROJECT_DIR$/src/zad/lunch/servlet/LunchServlet.java" />
         <option value="$PROJECT_DIR$/src/zad/lunch/servlet/OrderServlet.java" />
-        <option value="$PROJECT_DIR$/src/zad/lunch/client/LunchClient.java" />
       </list>
     </option>
   </component>
@@ -192,6 +193,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -350,7 +352,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -367,9 +368,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -413,6 +414,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -439,19 +453,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -585,12 +586,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -599,19 +599,20 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11953042" sideWeight="0.12913553" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11913548" sideWeight="0.12913553" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11953042" sideWeight="0.54002136" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -647,7 +648,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
@@ -680,39 +681,38 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/zad/lunch/client/LunchClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="50" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Desktop/jaxb_review/src/edu/neumont/jaxb/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.68251276">
-          <folding />
-        </state>
+        <state line="60" column="0" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.68251276" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/jaxb_review/src/edu/neumont/jaxb/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/jaxb_review/src/edu/neumont/jaxb/ObjectFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.6893688">
-          <folding />
-        </state>
+        <state line="41" column="0" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.6893688" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/jaxb_review/src/edu/neumont/xml/library.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="69" selection-start="0" selection-end="125" vertical-scroll-proportion="0.028239202">
-          <folding />
-        </state>
+        <state line="1" column="69" selection-start="0" selection-end="125" vertical-scroll-proportion="0.028239202" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/jaxb_review/src/edu/neumont/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="12" selection-start="787" selection-end="787" vertical-scroll-proportion="0.56478405">
-          <folding />
-        </state>
+        <state line="32" column="12" selection-start="787" selection-end="787" vertical-scroll-proportion="0.56478405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zad/lunch/jaxb/LunchService.java">
@@ -773,23 +773,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zad/lunch/servlet/LunchServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/zad/lunch/servlet/OrderServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
+        <state line="24" column="33" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zad/lunch/servlet/OrderServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/zad/lunch/servlet/LunchServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="61" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.0">
+        <state line="18" column="13" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zad/lunch/client/LunchClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="50" selection-start="937" selection-end="937" vertical-scroll-proportion="0.70598006">
+        <state line="25" column="50" selection-start="937" selection-end="937" vertical-scroll-proportion="-0.7354556">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

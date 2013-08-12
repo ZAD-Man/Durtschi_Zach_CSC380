@@ -17,13 +17,11 @@ public class LunchServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            System.out.println("GOT IN DOGET");
             response.setContentType("text/xml");
             JAXBContext jaxbContext = JAXBContext.newInstance(LunchService.class);
             Marshaller marshaller = jaxbContext.createMarshaller();
             LunchService lunchService = LunchServiceHolder.getLunchService();
             marshaller.marshal(lunchService, response.getWriter());
-            System.out.println("ENDING DOGET");
         } catch (Exception e) {
             e.printStackTrace();
         }

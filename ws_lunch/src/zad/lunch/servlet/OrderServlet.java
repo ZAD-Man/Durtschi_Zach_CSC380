@@ -19,8 +19,6 @@ import java.io.IOException;
 @WebServlet("/OrderServlet")
 public class OrderServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("GOT IN DOPOST");
-
         File file = new File("LunchOrders.txt");
 
         if (!file.exists()){
@@ -29,9 +27,6 @@ public class OrderServlet extends HttpServlet {
 
         BufferedWriter fileWriter = new BufferedWriter(new FileWriter(file, true));
         try {
-
-            System.out.println("GOT IN TRY");
-
             JAXBContext jaxbContext = JAXBContext.newInstance(LunchService.class);
             Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
             LunchService order = (LunchService)unmarshaller.unmarshal(request.getInputStream());
@@ -42,9 +37,6 @@ public class OrderServlet extends HttpServlet {
             fileWriter.append(String.format("Order: %s - %s\r\n", restaurant.getName(), menuItem.getName()));
             fileWriter.flush();
             fileWriter.close();
-
-            System.out.println("GOT PAST ALL");
-            System.out.println(file.getAbsolutePath());
 
         } catch (Exception e) {
             System.out.println("There was an error in the order: ");
