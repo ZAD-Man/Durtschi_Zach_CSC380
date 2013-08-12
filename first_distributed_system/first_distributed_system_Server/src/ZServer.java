@@ -2,7 +2,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ZServer {
+public class ZServer extends Thread{
     private ServerSocket serverSocket;
     private int port;
     private MathLogic mathLogic = new MathLogic();
@@ -11,7 +11,7 @@ public class ZServer {
         this.port = port;
     }
 
-    public void start() throws IOException {
+    public void startServer() throws IOException {
         System.out.println("Starting the server at port:" + port);
         serverSocket = new ServerSocket(port);
 
@@ -92,7 +92,7 @@ public class ZServer {
 
         try {
             ZServer socketServer = new ZServer(portNumber);
-            socketServer.start();
+            socketServer.startServer();
 
         } catch (IOException e) {
             e.printStackTrace();
