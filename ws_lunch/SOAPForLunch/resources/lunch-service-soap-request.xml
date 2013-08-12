@@ -3,8 +3,8 @@
         xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
         soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
 
-    <soap:Body xmlns:restaurant="www.example.com/zad/lunch/restaurant">
-        <restaurant:getAllRestaurant/>
+    <soap:Body xmlns:lunch="www.example.com/zad/lunch/lunchService">
+        <lunch:getLunchService/>
     </soap:Body>
 
 </soap:Envelope>

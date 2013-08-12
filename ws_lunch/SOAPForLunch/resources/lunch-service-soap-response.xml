@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+        soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
+
+    <soap:Body xmlns:lunch="www.example.com/zad/lunch/lunchService">
+        <lunch:lunchResponse>
+            <lunch:restaurant>
+                <lunch:id>0</lunch:id>
+                <lunch:name>Red Hot</lunch:name>
+                <lunch:menuItem>
+                    <lunch:id>0</lunch:id>
+                    <lunch:name>Chili Dog</lunch:name>
+                    <lunch:price>4.49</lunch:price>
+                </lunch:menuItem>
+                <lunch:menuItem>
+                    <lunch:id>1</lunch:id>
+                    <lunch:name>Veggie Dog</lunch:name>
+                    <lunch:price>3.99</lunch:price>
+                </lunch:menuItem>
+            </lunch:restaurant>
+            <lunch:restaurant>
+                <lunch:id>1</lunch:id>
+                <lunch:name>Neumont Market</lunch:name>
+                <lunch:menuItem>
+                    <lunch:id>0</lunch:id>
+                    <lunch:name>Egg</lunch:name>
+                    <lunch:price>1.29</lunch:price>
+                </lunch:menuItem>
+                <lunch:menuItem>
+                    <lunch:id>1</lunch:id>
+                    <lunch:name>Burrito</lunch:name>
+                    <lunch:price>1.49</lunch:price>
+                </lunch:menuItem>
+            </lunch:restaurant>
+        </lunch:lunchResponse>
+    </soap:Body>
+
+</soap:Envelope>

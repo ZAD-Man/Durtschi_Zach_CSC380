@@ -4,7 +4,6 @@
         soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
     <soap:Body xmlns:o="www.example.com/zad/lunch/order">
         <o:MakeOrder>
-            <o:id>1</o:id>
             <o:restaurantId>2</o:restaurantId>
             <o:menuItemId>1</o:menuItemId>
         </o:MakeOrder>
