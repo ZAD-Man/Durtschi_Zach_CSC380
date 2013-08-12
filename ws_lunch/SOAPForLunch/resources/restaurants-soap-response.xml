@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+        soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
+
+    <soap:Body xmlns:r="www.example.com/zad/lunch/restaurant">
+        <r:restaurantResponse>
+            <r:restaurant>
+                <r:id>1</r:id>
+                <r:name>Eat At Joe's</r:name>
+            </r:restaurant>
+            <r:restaurant>
+                <r:id>2</r:id>
+                <r:name>Krab Shac</r:name>
+            </r:restaurant>
+        </r:restaurantResponse>
+    </soap:Body>
+
+</soap:Envelope>
